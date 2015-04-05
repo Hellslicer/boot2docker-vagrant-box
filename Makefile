@@ -12,8 +12,8 @@ boot2docker-parallels.box: boot2docker.iso template.json vagrantfile.tpl \
 	files/bootlocal.sh files/bootsync.sh files/docker-enter files/oem-release
 	packer build -only parallels template.json
 
-#boot2docker.iso:
-#	curl -LO https://github.com/YungSang/boot2docker/releases/download/yungsang%2Fv1.4.1/boot2docker.iso
+boot2docker.iso:
+	curl -LO https://github.com/Hellslicer/boot2docker/releases/download/hellslicer%2Fv1.5.0/boot2docker.iso
 
 files/docker-enter:
 	curl -L https://raw.githubusercontent.com/YungSang/docker-attach/master/docker-nsenter -o files/docker-enter
